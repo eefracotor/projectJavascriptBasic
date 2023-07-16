@@ -123,7 +123,7 @@ function CarregarPokemon(id, list) {
             document.getElementById('tipoPk').innerHTML = `<p class='element'>${data['types'][0].type['name']}`;
             
             document.getElementById('imgPk').setAttribute('src', imgFront);
-            document.getElementById('imgPk').setAttribute('alt', imgFront);
+            document.getElementById('imgPk').setAttribute('alt', data['name']);
             document.getElementById("imgPk").classList ='';
             document.getElementById("imgPk").classList.add('img', data['types'][0].type['name']);
             // document.getElementById('nivelPk').innerHTML = `<p>Nivel de poder: ${data['base_experience']} </p>`
@@ -149,7 +149,7 @@ function CarregarPokemon(id, list) {
             document.getElementById('tipoPk2').innerHTML = `<p class='element'>${data['types'][0].type['name']}`;
             
             document.getElementById('imgPk2').setAttribute('src', imgFront);
-            document.getElementById('imgPk2').setAttribute('alt', imgFront);
+            document.getElementById('imgPk2').setAttribute('alt', data['name']);
             // document.getElementById('nivelPk2').innerHTML = `<p>Nivel de poder: ${data['base_experience']} </p>`
             // document.getElementById('abilityPk2').innerHTML = `<p>Abilidad: ${data['abilities'][0].ability['name']} </p>`
             document.getElementById('base2').innerHTML = `<div class="header-base"><p>${data['stats'][0].base_stat}</p><img src="./img/power.png" class="fa-circle"></div>`;
@@ -177,7 +177,7 @@ function CarregarPokemon(id, list) {
             document.getElementById('tipoPk3').innerHTML = `<p class='element'>${data['types'][0].type['name']}`;
             
             document.getElementById('imgPk3').setAttribute('src', imgFront);
-            document.getElementById('imgPk3').setAttribute('alt', imgFront);
+            document.getElementById('imgPk3').setAttribute('alt', data['name']);
             // document.getElementById('nivelPk3').innerHTML = `<p>Nivel de poder: ${data['base_experience']} </p>`
             // document.getElementById('abilityPk3').innerHTML = `<p>Abilidad: ${data['abilities'][0].ability['name']} </p>`
 
