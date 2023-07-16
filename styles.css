@@ -6,7 +6,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    /* font-family: 'Roboto', sans-serif; */
 }
  
 body {
@@ -35,14 +34,11 @@ img {
 }
 
 .img-inicio {
-    /* margin: 0 auto; */
     width: 78%;
     height: 70vh;
-    /* background-color: #ffffff20; */
 }
 
 .container-btn {
-    /* background-color: #000; */
     width: 50%;
     height: 15vh;
     display: flex;
@@ -68,7 +64,6 @@ img {
 }
 
 .btn-return {
-    /* position: absolute; */
     width: 150px;
     background-color: none;
     font-size: 3rem;
@@ -78,10 +73,7 @@ img {
 }
 
 .btn-return2 {
-    /* position: absolute; */
     width: 150px;
-    /* background-color: transparent; */
-    /* border: 0px ; */
     font-size: 3rem;
     position: fixed;
     bottom: 50px;
@@ -90,7 +82,6 @@ img {
 
 .container-opc {
     width: 500px;
-    /* background-color: #1ae200; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,7 +111,6 @@ img {
     margin: 50px auto;
     border: 1px solid #fff;
     border-radius: 10px;
-    /* box-shadow: 5px 5px 5px #ffe60075; */
     text-align: center;
     font-size: 1rem;
     color: #fff;
@@ -155,7 +145,6 @@ img {
     height: 65px;
     border-radius: 50%;
     background-color: #ffffff75;
-    /* background-image: url("./img/power.png"); */
     background-size: cover;
     background-position: center;
     font-size: 2rem;
@@ -171,10 +160,7 @@ img {
     justify-content: space-around;
     align-items: center;
     color: #fcfcfc;
-    /* text-align: center;
-    text-align: center; */
     margin: 1.5vh auto;
-    /* background-color: #000; */
     position: relative;
 }
 
@@ -187,20 +173,9 @@ img {
     position: relative;
 }
 
-
-/* .card h2 {
-    margin: 50px auto;
-    font-size: 2rem;
-    font-weight: 500;
-    text-transform: uppercase;
-} */
-
-
-
 .miniCrad, .miniCrad2 {
     width: 100px;
     height: 150px;
-    /* background-color: aquamarine; */
     border: 1px solid #000 ;
     border-radius: 15px;
     margin: 10px;
@@ -228,7 +203,6 @@ img {
     background-size: cover;
 }
 .miniCrad2 {
-    /* background-color: rgb(250, 123, 242); */
     background-image: url('./img/assets/fondolaranja.png');
     background-size: cover;
 }
@@ -261,7 +235,6 @@ img {
 .img {
     width: 300px;
     height: 300px;
-    /* border-radius: 15px; */
 }
 
 .fighting {
@@ -344,13 +317,6 @@ img {
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-    /* box-shadow: 2px 2px 2px #ffffff75; */
-    /* background-attachment: fixed; */
-    /* width: 35vw;
-    height: 70vh;
-    margin: 50px auto;
-    border: 1px solid #fff;
-    color: #fff; */
 }
 
 .lista {
@@ -358,13 +324,11 @@ img {
     height: 95vh;
     background-color: rgba(255, 255, 255, 0.25);
     border-radius: 15px;
-    /* background-color: #fff; */
     margin: 15px auto;
     display: flex;
     flex-wrap: wrap;
     overflow: auto;
     justify-content: center;
-    /* scroll-behavior: smooth; */
 }
 .lista::-webkit-scrollbar {
     display: none;
@@ -400,7 +364,6 @@ img {
 }
 
 .matchAlert {
-    /* margin:  auto; */
     margin-top: -100px;
     width: 350px;
     height: 10vh;
