@@ -8,69 +8,72 @@
     <title>Aula 3 Javascript</title>
 </head>
 <body>
-    <div id="inicio" class="inicio"></div>
-    <div id="juego">
-        <div id="lista" class="lista"></div>
-        <div class="card jogo" id="card">
-            <div class="header-card">
-                <div id="base" class="base"></div>
-                <h2  id="nomePk"></h2>
+    <div class="container-geral">
+        <div id="inicio" class="inicio"></div>
+        <div id="juego">
+            <div id="lista" class="lista"></div>
+            <div class="card jogo" id="card">
+                <div class="header-card">
+                    <div id="base" class="base"></div>
+                    <h2  id="nomePk"></h2>
+                </div>
+                <img id="imgPk" alt="" src="">
+                <div id="tipoPk"></div>
+                <div id="nivelPk"></div>
+                <div id="attack"></div>
             </div>
-            <img id="imgPk" alt="" src="">
-            <div id="tipoPk"></div>
-            <div id="nivelPk"></div>
-            <div id="attack"></div>
-        </div>
-        <div class="card jogo" id="card2">
-            <div class="header-card">
-                <h2  id="nomePk2"></h2>
-                <div id="base2"></div>
+            <div class="card jogo" id="card2">
+                <div class="header-card">
+                    <h2  id="nomePk2"></h2>
+                    <div id="base2"></div>
+                </div>
+                <img id="imgPk2" src="" alt="">
+                
+                <div id="tipoPk2"></div>
+                <div id="nivelPk2"></div>
+                <div id="attack2"></div>
             </div>
-            <img id="imgPk2" src="" alt="">
-            
-            <div id="tipoPk2"></div>
-            <div id="nivelPk2"></div>
-            <div id="attack2"></div>
+            <div id="lista2" class="lista"></div>
+
+            <span id="resultado">10</span>
+            <div class="container-opc" id="pciones">
+                <button id="op1" class="btn-opc" onclick=ControlaRespuesta(this) title='Escolhe uma opção'>1</button>
+                <button id="op2" class="btn-opc" onclick=ControlaRespuesta(this) title='Escolhe uma opção'>2</button>
+                <button id="op3" class="btn-opc" onclick=ControlaRespuesta(this) title='Escolhe uma opção'>3</button>
+            </div>
+
+            <button class="btn-select btn-return" onClick=jogar(3) title='Voltar ao inicio'>
+                <i class="fa-solid fa-house-chimney"></i>
+            </button>
+
+
         </div>
-        <div id="lista2" class="lista"></div>
+        <div class="match" id="match"></div>
 
-        <span id="resultado">10</span>
-        <div class="container-opc" id="pciones">
-            <button id="op1" class="btn-opc" onclick=ControlaRespuesta(this)>1</button>
-            <button id="op2" class="btn-opc" onclick=ControlaRespuesta(this)>2</button>
-            <button id="op3" class="btn-opc" onclick=ControlaRespuesta(this)>3</button>
+        <div class="conhecePk" id="conhecePk">
+            <div id="lista3" class="lista lista3"></div>
+            <div class="card" id="card3">
+                <div class="header-card">
+                    <h2  id="nomePk3"></h2>
+                    <div id="base3"></div>
+                </div>
+                <img id="imgPk3" alt="" src="">
+                <div id="tipoPk3"></div>
+                <div id="nivelPk3"></div>
+                <div id="abilityPk3"></div>
+                <div id="attack3"></div>
+                <div id="defense3"></div>
+                <div id="specialAttack3"></div>
+                <div id="specialDefense3"></div>
+                <div id="speed3"></div>
+
+            </div>
+            <button class="btn-select btn-return2" onClick=jogar(3) title="Voltar ao inicio">
+                <i class="fa-solid fa-house-chimney"></i>
+            </button>
         </div>
-
-        <button class="btn-select btn-return" onClick=jogar(3)>
-            <i class="fa-solid fa-house-chimney"></i>
-        </button>
-
-
     </div>
-    <div class="match" id="match"></div>
-
-    <div class="conhecePk" id="conhecePk">
-        <div id="lista3" class="lista lista3"></div>
-        <div class="card" id="card3">
-            <div class="header-card">
-                <h2  id="nomePk3"></h2>
-                <div id="base3"></div>
-            </div>
-            <img id="imgPk3" alt="" src="">
-            <div id="tipoPk3"></div>
-            <div id="nivelPk3"></div>
-            <div id="abilityPk3"></div>
-            <div id="attack3"></div>
-            <div id="defense3"></div>
-            <div id="specialAttack3"></div>
-            <div id="specialDefense3"></div>
-            <div id="speed3"></div>
-
-        </div>
-        <button class="btn-select btn-return2" onClick=jogar(3)>
-            <i class="fa-solid fa-house-chimney"></i>
-        </button>
-    </div>
+    
         
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

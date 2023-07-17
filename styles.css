@@ -86,7 +86,7 @@ img {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    bottom: 175px;
+    bottom: 20vh;
     right: 36%;
 }
 

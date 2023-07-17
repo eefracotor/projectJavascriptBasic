@@ -11,6 +11,7 @@ const conhecePk = document.getElementById('conhecePk');
 var resultadoReal = 0;
 telaDeJogo.style.display='none';
 conhecePk.style.display='none';
+textResultado.style.display = 'none';
 var num1, num2, res1, res2;
 var respuesta;
 var indiceOpCorrecta;
@@ -23,9 +24,10 @@ function jogar(op) {
             telaInicio.style.display='none';
             conhecePk.style.display='none';
             Swal.fire({
-                title: '<strong>Como jogar??</strong>',
-                html: '<p>Certa Resposta!</p>',
-                width: 600,
+                title: '<strong>Como jogar?</strong>',
+                html: '<p>Número de jogadores: O jogo pode ser jogado por um ou mais jogadores.</p><br><p> Preparação do jogo: Você precisará de papel e caneta, para apontar os jogos ganhos.</p><br><p>Objetivo: Acertar o máximo de jogadas.</p><br><p>Regras de soma: Os jogadores definem o número de jogadas, O jogador deverá somar os valores de ATAQUE, localizado em cada carta, e clicar no valor correto de 3 opções a serem apresentadas.</p><br><p>Quem tiver mais acertos do total de jogadas, será o vencedor.</p>', 
+                width: 700,
+                confirmButtonText: 'Bora jogar!',
                 showConfirmButton: true
             });
             break;
@@ -44,8 +46,8 @@ function jogar(op) {
 telaInicio.innerHTML = `
                         <div class="img-inicio"><img src='./img/pokemon.png'></div>
                         <div class="container-btn">
-                            <button class="btn-select" onClick=jogar(2)>Conoce tu Pokemon</button>
-                            <button class="btn-select" onClick=jogar(1)>Desafío</button>
+                            <button title='Conhece o teu Pokemon' class="btn-select" onClick=jogar(2)>Conhece o teu Pokemon</button>
+                            <button title='Jogar' class="btn-select" onClick=jogar(1)>Jogar</button>
                         </div>
                     `;
 
@@ -63,7 +65,7 @@ function ControlaRespuesta(OpcionElegida) {
     if(resultadoReal == OpcionElegida.innerHTML) {
         Swal.fire({
             title: '<strong style="color:#fff">Parabens!!</strong>',
-            html: '<p style="color:#fff">Certa Resposta!</p>',
+            html: '<p style="color:#fff">Acertou!</p>',
             width: 600,
             showConfirmButton: false,
             imageUrl: 'https://i.pinimg.com/originals/77/0d/41/770d412bf74f350b0d8a402f43be9af1.gif',
@@ -181,21 +183,21 @@ function cargarListaPok () {
             .then((data) => {
                 lista1.innerHTML += `
                     <div class='miniCrad'>
-                        <button onclick=CarregarPokemon(${data['id']},1) class='btn'>
+                        <button title='Seleciona um pokemon' onclick=CarregarPokemon(${data['id']},1) class='btn'>
                             <div class='imgMini'><img  src=${data['sprites']['other']['dream_world']['front_default']} alt=${data['name']} /></div>
                         </button>
                     </div>
                 `;
                 lista2.innerHTML += `
                     <div class='miniCrad2'>
-                        <button onclick=CarregarPokemon(${data['id']},2) class='btn'>
+                        <button title='Seleciona um pokemon' onclick=CarregarPokemon(${data['id']},2) class='btn'>
                         <div class='imgMini'><img  src=${data['sprites']['other']['dream_world']['front_default']} alt=${data['name']} /></div>
                         </button>
                     </div>
                 `;
                 lista3.innerHTML += `
                     <div class='miniCrad3'>
-                        <button onclick=CarregarPokemon(${data['id']},3) class='btn'>
+                        <button title='Seleciona um pokemon' onclick=CarregarPokemon(${data['id']},3) class='btn'>
                             <div class='imgMini3'><img  src=${data['sprites']['other']['dream_world']['front_default']} alt=${data['name']} /></div>
                             <p class='name-card'>${data['name']}</p>
                         </button>
