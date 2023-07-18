@@ -399,11 +399,6 @@ img {
     margin-left: 1vw;
   }
 
-  .btn-return2, .btn-return {
-    width: 13vw;
-    font-size: 1.5rem;
-  }
-
   .btn-opc {
     font-size: 1.25rem;
   }
@@ -420,5 +415,19 @@ img {
     width: 3.5vw;
     justify-content: space-between;
     height: 7.9vh;
+  }
+
+  .element {
+    width: 10vw;
+  }
+
+  .btn-select {
+    height: 15vh;
+  }
+
+  .btn-return2, .btn-return {
+    width: 13vw;
+    font-size: 1.5rem;
+    height: 10vh;
   }
 }
