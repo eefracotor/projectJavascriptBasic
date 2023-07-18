@@ -9,12 +9,13 @@ const op3 = document.getElementById('op3');
 const textResultado = document.getElementById('resultado');
 const conhecePk = document.getElementById('conhecePk');
 var resultadoReal = 0;
-telaDeJogo.style.display='none';
-conhecePk.style.display='none';
-textResultado.style.display = 'none';
 var num1, num2, res1, res2;
 var respuesta;
 var indiceOpCorrecta;
+
+telaDeJogo.style.display='none';
+conhecePk.style.display='none';
+textResultado.style.display = 'none';
 textResultado.innerHTML = '';
  
 function jogar(op) {
@@ -159,9 +160,7 @@ function CarregarPokemon(id, list) {
             op2.innerHTML = `${respuesta - 3}`;
             op1.innerHTML = `${respuesta + 5}`;
         }
-
         resultadoReal = respuesta;
-
         })
         .catch((error)=> {
             console.log(error);
@@ -207,9 +206,7 @@ function cargarListaPok () {
             .catch((error) => {
                 console.log(error)
             })
-
     }
-
 }
 
 cargarListaPok();

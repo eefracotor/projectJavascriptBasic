@@ -142,8 +142,8 @@ img {
 }
 
 .fa-circle {
-    width: 65px;
-    height: 65px;
+    width: 3.5vw;
+    height: 7.9vh;
     border-radius: 50%;
     background-color: #ffffff75;
     background-size: cover;
@@ -375,3 +375,50 @@ img {
 }
 
 /* rgb(70 144 107) */
+@media screen and (max-width: 925px) {
+    .miniCrad3, .miniCrad2, .miniCrad {
+        width: 15vw;
+        height: 50vh;
+    }
+
+    .imgMini3, .imgMini2, .imgMini {
+    width: 10vw;
+    height: 25vh;
+    }
+
+  .header-card {
+    font-size: 0.75rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+    line-height: 1rem;
+  }
+
+  .header-base p {
+    font-size: 0.9rem;
+    margin-left: 1vw;
+  }
+
+  .btn-return2, .btn-return {
+    width: 13vw;
+    font-size: 1.5rem;
+  }
+
+  .btn-opc {
+    font-size: 1.25rem;
+  }
+
+  .container-opc {
+    bottom: 15vh;
+  }
+
+  .header-card {
+    width: 90%;
+  }
+
+  .header-base {
+    width: 3.5vw;
+    justify-content: space-between;
+    height: 7.9vh;
+  }
+}
