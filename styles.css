@@ -374,6 +374,22 @@ img {
     font-weight: 600;
 }
 
+.primerira-alert {
+    width: 90%;
+    margin: auto;
+
+}
+
+.background-primerira-alert{
+    background-color: #1ae200;
+}
+
+.img-alert{
+    width: 24vw;
+    height: 54vh;
+}
+
+
 /* rgb(70 144 107) */
 @media screen and (max-width: 925px) {
     .miniCrad3, .miniCrad2, .miniCrad {
@@ -425,9 +441,23 @@ img {
     height: 15vh;
   }
 
-  .btn-return2, .btn-return {
+    .btn-return2, .btn-return {
     width: 13vw;
     font-size: 1.5rem;
     height: 10vh;
-  }
+    }
+
+    .primerira-alert p {
+        font-size: .85rem;
+    }
+
+    .title-primerira-alert{
+        font-size: 1.5rem;
+    }
+
+    .img-alert{
+        width: 20vw;
+        height: 50vh;
+    }
 }
+

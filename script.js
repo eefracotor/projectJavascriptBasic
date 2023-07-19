@@ -25,10 +25,14 @@ function jogar(op) {
             telaInicio.style.display='none';
             conhecePk.style.display='none';
             Swal.fire({
-                title: '<strong>Como jogar?</strong>',
-                html: '<p>Número de jogadores: O jogo pode ser jogado por um ou mais jogadores.</p><br><p> Preparação do jogo: Você precisará de papel e caneta, para apontar os jogos ganhos.</p><br><p>Objetivo: Acertar o máximo de jogadas.</p><br><p>Regras de soma: Os jogadores definem o número de jogadas, O jogador deverá somar os valores de ATAQUE, localizado em cada carta, e clicar no valor correto de 3 opções a serem apresentadas.</p><br><p>Quem tiver mais acertos do total de jogadas, será o vencedor.</p>', 
-                width: 700,
+                title: '<h1 class="title-primerira-alert"><strong>Como jogar?</strong></h1>',
+                html: '<div class="primerira-alert"><p>Número de jogadores: O jogo pode ser jogado por um ou mais jogadores.</p><br><p> Preparação do jogo: Você precisará de papel e caneta, para apontar os jogos ganhos.</p><br><p>Objetivo: Acertar o máximo de jogadas.</p><br><p>Regras de soma: Os jogadores definem o número de jogadas, O jogador deverá somar os valores de ATAQUE, localizado em cada carta, e clicar no valor correto de 3 opções a serem apresentadas.</p><br><p>Quem tiver mais acertos do total de jogadas, será o vencedor.</p></div>', 
+                grow: 'row',
+                showCloseButton: true,
                 confirmButtonText: 'Bora jogar!',
+                confirmButtonColor: '#1ae200',
+                focusConfirm: false,
+                showLoaderOnConfirm: false,
                 showConfirmButton: true
             });
             break;
@@ -71,13 +75,16 @@ function ControlaRespuesta(OpcionElegida) {
             showConfirmButton: false,
             imageUrl: 'https://i.pinimg.com/originals/77/0d/41/770d412bf74f350b0d8a402f43be9af1.gif',
             background: '#4b8091',
-            imageAlt: 'Custom image',
+            // imageAlt: 'Custom image',
             backdrop: `
                 rgba(0,0,123,0.4)
                 url(https://thumbs.gfycat.com/AlarmingSlipperyAstrangiacoral-mobile.mp4)
                 left top
                 no-repeat
             `,
+            customClass: {
+                image: 'img-alert'
+            },
             timer: 2500
         });
         setTimeout(comenzar,2000);
